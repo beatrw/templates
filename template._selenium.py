@@ -41,6 +41,12 @@ print(driver.page_source)
 #Para lidar com várias abas
 janela_bot = driver.current_window_handle
 
+#Para lidar com janelas de alerta
+#Aceitar
+driver.switch_to.alert.accept
+#Nao aceitar
+driver.switch_to.alert.dismiss
+
 #Busca básica 
 #Pode ser por xpath ou outr
 driver.find_element(By.XPATH, 'XPATH').click() #- clicando
